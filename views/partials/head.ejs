@@ -18,6 +18,21 @@
 
 <!-- Next import js files -->
 
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+	
+ var apiKey = '<%= process.env.API_KEY %>';
+  // Initialize Firebase
+  var config = {
+    apiKey: apiKey,
+    authDomain: "hubspot-project.firebaseapp.com",
+    databaseURL: "https://hubspot-project.firebaseio.com",
+    projectId: "hubspot-project",
+    storageBucket: "hubspot-project.appspot.com",
+    messagingSenderId: "856314607183"
+  };
+  firebase.initializeApp(config);
+</script>
 <!-- first we import jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
