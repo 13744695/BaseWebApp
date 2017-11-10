@@ -19,6 +19,38 @@
     Try it
   </button>
 
+	<!-- new form inserted here from https://github.com/zsobin/DatabaseWebApp/blob/master/views/pages/index.ejs-->
+	
+	
+	 <form id="message-form" action="#">
+      <div class="form-group">
+        <label for="new-post-title">
+          Post title...
+        </label>
+        <input type="text" id="new-post-title">
+      </div>
+
+      <div class="form-group">
+        <label for="new-post-body">
+          Post message...
+        </label>
+        <textarea rows="3" id="new-post-body"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-default" onclick="handleMessageFormSubmit()">
+        Add post
+      </button>
+    </form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   <div id="doge-image"/>
 
 </body>
