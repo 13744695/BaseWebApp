@@ -8,21 +8,19 @@
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
-    <h1>YOYO web apps are so cool TGIF</h1>
+    <h1>Stream</h1>
   </div>
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
-
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Try it
+  <button id="login-button" class="btn btn-default" type="button" onclick="toggleSignIn()">
+    Sign in to view stream
   </button>
 
-	<!-- new form inserted here from https://github.com/zsobin/DatabaseWebApp/blob/master/views/pages/index.ejs-->
-	
-	
-	 <form id="message-form" action="#">
+  <section id="add-post">
+    <h2 class="mdl-card__title-text">
+      New Post
+    </h2>
+
+    <form id="message-form" action="#">
       <div class="form-group">
         <label for="new-post-title">
           Post title...
@@ -41,17 +39,11 @@
         Add post
       </button>
     </form>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-  <div id="doge-image"/>
+  </section>
+
+  <div id="stream">
+    Stream goes here:
+  </div>
 
 </body>
 
